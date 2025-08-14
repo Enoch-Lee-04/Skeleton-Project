@@ -51,9 +51,9 @@ def create_pose_estimator(model_complexity: int,
 
 
 def create_holistic_estimator(model_complexity: int,
-                              min_detection_confidence: float,
-                              min_tracking_confidence: float,
-                              refine_face_landmarks: bool):
+                            min_detection_confidence: float,
+                            min_tracking_confidence: float,
+                            refine_face_landmarks: bool):
     mp_holistic = mp.solutions.holistic
     holistic = mp_holistic.Holistic(
         static_image_mode=False,
